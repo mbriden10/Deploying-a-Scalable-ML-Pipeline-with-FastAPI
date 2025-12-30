@@ -23,6 +23,7 @@ def train_model(X_train, y_train):
     # TODO: implement the function
     model = RandomForestClassifier(n_estimators=100, random_state=42)
     model.fit(X_train, y_train)
+    return model
     
 
 
@@ -64,6 +65,7 @@ def inference(model, X):
     """
     # TODO: implement the function
     preds = model.predict(X)
+    return preds
     
 
 def save_model(model, path):
@@ -86,6 +88,7 @@ def load_model(path):
     # TODO: implement the function
     with open(path, "rb") as f:
         model = pickle.load(f)
+    return model
     
 
 
