@@ -36,10 +36,6 @@ cat_features = [
 
 # TODO: use the process_data function provided to process the data.
 X_train, y_train, encoder, lb = process_data(
-    # your code here
-    # use the train dataset 
-    # use training=True
-    # do not need to pass encoder and lb as input
     train,
     categorical_features=cat_features,
     label="salary",
@@ -83,8 +79,6 @@ for col in cat_features:
     for slicevalue in sorted(test[col].unique()):
         count = test[test[col] == slicevalue].shape[0]
         p, r, fb = performance_on_categorical_slice(
-            # your code here
-            # use test, col and slicevalue as part of the input
             data=test,
             column_name=col,
             slice_value=slicevalue,
