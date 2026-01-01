@@ -1,0 +1,12 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.13, pytest-8.3.2, pluggy-1.5.0 -- /opt/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /workspace/Deploying-a-Scalable-ML-Pipeline-with-FastAPI
+plugins: anyio-4.6.2.post1
+collecting ... collected 3 items
+
+test_ml.py::test_one PASSED                                              [ 33%]
+test_ml.py::test_two PASSED                                              [ 66%]
+test_ml.py::test_three PASSED                                            [100%]
+
+============================== 3 passed in 1.48s ===============================
