@@ -76,6 +76,7 @@ async def post_inference(data: Data):
         _inference = inference(model, data_processed)
         if isinstance(_inference, (list, tuple, np.ndarray)):
             _inference = _inference[0]
+        _inference = int(_inference)
         return {"result": apply_label(_inference)}
     
     except Exception as e:
