@@ -72,7 +72,8 @@ async def post_inference(data: Data):
             lb= None
         )
         _inference = inference(model, data_processed)
-        _inference = _inference[0] if hasattr(_inference, '__getitem__') else _inference
+        if isinstance(_inference, (list, tuple, np.ndarray)):
+            _inference = _inference[0]
         return {"result": apply_label(_inference)}
     
     except Exception as e:
