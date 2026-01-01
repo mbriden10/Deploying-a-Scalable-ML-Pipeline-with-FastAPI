@@ -6,6 +6,8 @@ from pydantic import BaseModel, Field
 
 from ml.data import apply_label, process_data
 from ml.model import inference, load_model
+import numpy as np
+
 
 # DO NOT MODIFY
 class Data(BaseModel):
