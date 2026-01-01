@@ -1,4 +1,4 @@
-#Submission Link: <https://github.com/mbriden10/Deploying-a-Scalable-ML-Pipeline-with-FastAPI>
+# Submission Link: <https://github.com/mbriden10/Deploying-a-Scalable-ML-Pipeline-with-FastAPI>
 
 Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
 
