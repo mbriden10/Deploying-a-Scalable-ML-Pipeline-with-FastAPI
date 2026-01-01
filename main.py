@@ -71,7 +71,8 @@ async def post_inference(data: Data):
             encoder=encoder,
             lb= None
         )
-        _inference = inference(model, data_processed)[0]
+        _inference = inference(model, data_processed)
+        _inference = _inference[0] if hasattr(_inference, '__getitem__') else _inference
         return {"result": apply_label(_inference)}
     
     except Exception as e:
